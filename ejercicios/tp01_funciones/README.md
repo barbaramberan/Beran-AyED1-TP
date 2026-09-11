@@ -10,6 +10,10 @@ Este directorio contiene los ejercicios correspondientes a este trabajo práctic
 | Nº | Archivo | Ejecución |
 |---:|---|---|
 | 1 | `tp01_ej01_mayor_unico.py` | `python tp01_ej01_mayor_unico.py` |
+| 2 | `tp01_ej02_fecha_valida.py` | `python tp01_ej02_fecha_valida.py` |
+| 3 | `tp01_ej03_gasto_subte.py` | `python tp01_ej03_gasto_subte.py` |
+| 4 | `tp01_ej04_vuelto_billetes.py` | `python tp01_ej04_vuelto_billetes.py` |
+| 5 | `tp01_ej05_oblongo_triangular.py` | `python tp01_ej05_oblongo_triangular.py` |
 
 ## Ejecutar un ejercicio
 
