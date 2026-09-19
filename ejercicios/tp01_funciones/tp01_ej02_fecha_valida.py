@@ -1,15 +1,16 @@
 # TP01 - Ejercicio 02
 # Función que recibe tres números enteros positivos correspondientes al día, mes, año de una fecha y verifica si corresponden a una fecha válida.
 
+
 def _es_bisiesto(anio: int) -> bool:
     """Contrato: Recibe un número entero como "anio" y verifica si un año es biciesto.
 
-       Precondiciones: 
-            anio debe ser un número entero.
+    Precondiciones:
+         anio debe ser un número entero.
 
-       Postcondiciones: 
-            Devuelve True solo si anio es divisible por 4, pero no por 100, 
-            a menos que también sea divisible por 400. En cualquier otro caso devuelve False.
+    Postcondiciones:
+         Devuelve True solo si anio es divisible por 4, pero no por 100,
+         a menos que también sea divisible por 400. En cualquier otro caso devuelve False.
     """
     assert isinstance(anio, int), "anio debe ser un entero"
 
@@ -22,19 +23,19 @@ def _es_bisiesto(anio: int) -> bool:
     return False
 
 
-def _validar_fecha(dia: int, mes: int, anio: int) -> bool:
-    """ Contrato: 
-            Recibe tres números enteros y valida si los tres valores día, mes y año, representan una fecha válida. 
+def validar_fecha(dia: int, mes: int, anio: int) -> bool:
+    """Contrato:
+        Recibe tres números enteros y valida si los tres valores día, mes y año, representan una fecha válida.
 
-        Precondiciones: 
-            dia, mes y anio deben ser números enteros.
+    Precondiciones:
+        dia, mes y anio deben ser números enteros.
 
-        Postcondiciones: 
-            - Retorna True si la fecha es biológicamente y cronológicamente válida.
-            - Retorna False si el mes está fuera del rango 1-12, si el año excede los límites (-9999 A.C a 9999 D.C),
-                o si el día no se corresponde con los días máximos que posee ese mes en particular (contando bisiestos).
+    Postcondiciones:
+        - Retorna True si la fecha es biológicamente y cronológicamente válida.
+        - Retorna False si el mes está fuera del rango 1-12, si el año excede los límites (-9999 A.C a 9999 D.C),
+            o si el día no se corresponde con los días máximos que posee ese mes en particular (contando bisiestos).
     """
-    # Validar rangos generales de las variables independientes
+    # Validar rangos generales de las variables
     if dia > 31 or dia < 1:
         return False
     if mes > 12 or mes < 1:
@@ -57,7 +58,7 @@ def _validar_fecha(dia: int, mes: int, anio: int) -> bool:
             return False
     return True
 
-        
+
 def main() -> None:
     """
     Contrato:
@@ -73,18 +74,18 @@ def main() -> None:
     mes = int(input("Ingrese un número de mes: "))
     anio = int(input("Ingrese un año: "))
 
-    if _validar_fecha(dia, mes, anio):
+    if validar_fecha(dia, mes, anio):
         print("La fecha ingresada es válida.")
     else:
         print("La fecha ingresada no es válida")
 
 
 if __name__ == "__main__":
-    assert _validar_fecha(31, 1, 2026) == True
-    assert _validar_fecha(29, 2, 2024) == True
-    assert _validar_fecha(30, 4, 2005) == True
-    assert _validar_fecha(31, 6, 2047) == False
-    assert _validar_fecha(29, 2, 2025) == False
-    assert _validar_fecha(30, 2, 2000) == False
+    assert validar_fecha(31, 1, 2026) == True
+    assert validar_fecha(29, 2, 2024) == True
+    assert validar_fecha(30, 4, 2005) == True
+    assert validar_fecha(31, 6, 2047) == False
+    assert validar_fecha(29, 2, 2025) == False
+    assert validar_fecha(30, 2, 2000) == False
 
     main()

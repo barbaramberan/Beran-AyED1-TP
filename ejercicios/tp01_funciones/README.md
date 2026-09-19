@@ -14,6 +14,10 @@ Este directorio contiene los ejercicios correspondientes a este trabajo práctic
 | 3 | `tp01_ej03_gasto_subte.py` | `python tp01_ej03_gasto_subte.py` |
 | 4 | `tp01_ej04_vuelto_billetes.py` | `python tp01_ej04_vuelto_billetes.py` |
 | 5 | `tp01_ej05_oblongo_triangular.py` | `python tp01_ej05_oblongo_triangular.py` |
+| 6 | `tp01_ej06_concatenar_enteros.py` | `python tp01_ej06_concatenar_enteros.py` |
+| 7 | `tp01_ej07_dia_siguiente.py` | `python tp01_ej07_dia_siguiente.py` |
+| 8 | `tp01_ej08_calendario_mes.py` | `python tp01_ej08_calendario_mes.py` |
+| 9 | `tp01_ej09_cajones_naranjas.py` | `python tp01_ej09_cajones_naranjas.py` |
 
 ## Ejecutar un ejercicio
 
