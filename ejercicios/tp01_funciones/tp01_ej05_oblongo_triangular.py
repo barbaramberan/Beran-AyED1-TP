@@ -47,7 +47,7 @@
 #     main()
 
 # Ahora vamos con la lambda, la cuál me di cuenta que hay que pensar de manera muyb diferente y no se puede adaptar la función antetrior.
-# Usé la IA spara ayudarme a descubrir qué funcion matemática tenía que aplicar y en ambas funciones se utiliza Bhaskara
+# Usé la IA para ayudarme a descubrir qué funcion matemática tenía que aplicar y en ambas funciones se utiliza Bhaskara
 es_oblongo = lambda num: (
     (-1 + (1 + 4 * num) ** 0.5) / 2 == int((-1 + (1 + 4 * num) ** 0.5) / 2)
     if num >= 0

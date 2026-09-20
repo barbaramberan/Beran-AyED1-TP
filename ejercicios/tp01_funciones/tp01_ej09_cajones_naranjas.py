@@ -1,12 +1,6 @@
 # TP01 - Ejercicio 09
-# programa para ingresar la cantidad de naranjas
-# cosechadas e informar cuántos cajones se pueden llenar, cuántas naranjas son para
-# jugo y si hay algún sobrante de naranjas que deba considerarse para el siguiente
-# reparto. Simular el peso de cada unidad generando un número entero al azar entre
-# 150 y 350.
-# En un cajón caben 100 naranjas con un peso de entre 200 y 300 gramos cada una.
-# Si el peso de alguna naranja se encuentra fuera del rango indicado se la clasifica para procesar como jugo.
-# Yo voy a tomar los valores límite de paso inclusive.
+# programa para ingresar la cantidad de naranjas cosechadas e informar cuántos cajones se pueden llenar, cuántas naranjas son para jugo y si hay algún sobrante de naranjas que deba considerarse para el siguiente reparto. Simular el peso de cada unidad generando un número entero al azar entre 150 y 350. En un cajón caben 100 naranjas con un peso de entre 200 y 300 gramos cada una. Si el peso de alguna naranja se encuentra fuera del rango indicado se la clasifica para procesar como jugo.
+# Yo voy a tomar los valores de límite de peso inclusive.
 
 from random import randint
 import math
