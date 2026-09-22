@@ -3,6 +3,7 @@
 
 from random import randint
 
+
 def crear_lista() -> list[int]:
     """
     Contrato:
@@ -12,9 +13,8 @@ def crear_lista() -> list[int]:
     Postcondiciones:
         La función devuelve una lista de enteros positivos.
     """
-    
-    return [randint(1, 50) for i in range(randint(10, 20))]
 
+    return [randint(1, 50) for i in range(randint(10, 20))]
 
 
 def eliminar_valores(lista1: list[int], lista2: list[int]) -> None:
@@ -27,12 +27,17 @@ def eliminar_valores(lista1: list[int], lista2: list[int]) -> None:
         Muestra en pantalla las dos listas con las que trabajaremos, la lista de elementos a eliminar y como queda la lista luego de eliminarlos.
     """
     print(f"Vamos a trabajar con la siguiente lista:\n{lista1}\n")
-    print(f"Verificaremos, y eliminaremos los elementos de nuestra lista, que se encuentren también en la siguiente lista:\n{lista2}\n")
-    indices_eliminar = [indice for indice, elemento in enumerate(lista1) if elemento in lista2]
+    print(
+        f"Verificaremos, y eliminaremos los elementos de nuestra lista, que se encuentren también en la siguiente lista:\n{lista2}\n"
+    )
+    indices_eliminar = [
+        indice for indice, elemento in enumerate(lista1) if elemento in lista2
+    ]
     indices_eliminar.sort(reverse=True)
     eliminados = [lista1.pop(i) for i in indices_eliminar]
     print(f"Esta es la lista de valores que vamos a eliminar:\n{eliminados}\n")
     print(f"Así quedó la lista despúes de eliminar los valores:\n{lista1}\n")
+
 
 def main() -> None:
     """
@@ -47,6 +52,6 @@ def main() -> None:
     lista2 = crear_lista()
     eliminar_valores(lista1, lista2)
 
+
 if __name__ == "__main__":
     main()
-        

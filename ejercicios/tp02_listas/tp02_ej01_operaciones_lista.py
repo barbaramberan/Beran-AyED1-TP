@@ -84,6 +84,6 @@ if __name__ == "__main__":
     assert eliminar_valor([1, 2, 3], 9) == [1, 2, 3]
     assert determinar_capicua([1, 2, 3, 2, 1]) == True
     assert determinar_capicua([1, 2, 3, 4]) == False
-    assert determinar_capicua([5]) == True 
-    assert determinar_capicua([]) == True 
+    assert determinar_capicua([5]) == True
+    assert determinar_capicua([]) == True
     main()

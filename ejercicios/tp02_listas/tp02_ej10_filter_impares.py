@@ -3,6 +3,7 @@
 
 from random import randint
 
+
 def crear_lista() -> list[int]:
     """
     Contrato:
@@ -12,12 +13,13 @@ def crear_lista() -> list[int]:
     Postcondiciones:
         La función devuelve una lista de enteros positivos.
     """
-    
+
     return [randint(1, 100) for i in range(randint(10, 20))]
 
+
 def lista_impares(lista: list[int]) -> list[int]:
-    return list(filter(lambda x: x % 2 != 0, lista ))
-    
+    return list(filter(lambda x: x % 2 != 0, lista))
+
 
 def main() -> None:
     """
@@ -29,7 +31,10 @@ def main() -> None:
         No retorna nada, pero muestra en pantalla la lista principal y la nueva lista de impares.
     """
     lista = crear_lista()
-    print(f"Esta es la lista original:\n{lista}\nY esta es la misma lista unicamente con los impares:\n{lista_impares(lista)}")
+    print(
+        f"Esta es la lista original:\n{lista}\nY esta es la misma lista unicamente con los impares:\n{lista_impares(lista)}"
+    )
+
 
 if __name__ == "__main__":
     main()
