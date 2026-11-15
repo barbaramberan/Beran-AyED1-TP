@@ -1,5 +1,6 @@
 # TP01 - Ejercicio 08
-# Este ejercicio pide que se arme un programa para imprimir el calendario de un mes, utilizando una función dada (_dia_de_semana).
+# Este ejercicio pide que se arme un programa para imprimir el calendario de un mes, utilizando 
+# una función dada (_dia_de_semana).
 # Yo nuevamente reutilicé mis funciones de validar fecha.
 
 

@@ -1,5 +1,7 @@
 # TP02 - Ejercicio 05
-# Escribir una función que reciba una lista como parámetro y devuelva True si la lista está ordenada en forma ascendente o False en caso contrario. Por ejemplo, ordenada([1, 2, 3]) retorna True y ordenada(['b', 'a']) retorna False. Desarrollar además un programa para verificar el comportamiento de la función.
+# Escribir una función que reciba una lista como parámetro y devuelva True si la lista está ordenada 
+# en forma ascendente o False en caso contrario. Por ejemplo, ordenada([1, 2, 3]) retorna True y ordenada(['b', 'a']) retorna False. 
+# Desarrollar además un programa para verificar el comportamiento de la función.
 
 lista_ordenada = lambda lista: lista == sorted(lista)
 
@@ -7,7 +9,8 @@ lista_ordenada = lambda lista: lista == sorted(lista)
 def main() -> None:
     """
     Contrato:
-        Ejecuta el programa principal. A partir de una serie de listas definidas, llama a la función 'lista_ordenada' para comprobar si están ordenadas o no.
+        Ejecuta el programa principal. A partir de una serie de listas definidas, 
+        llama a la función 'lista_ordenada' para comprobar si están ordenadas o no.
     Precondiciones:
         El archivo debe ejecutarse como programa principal. No recibe parámetros.
     Postcondiciones:

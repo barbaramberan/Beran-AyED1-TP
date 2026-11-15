@@ -25,11 +25,14 @@ def crear_lista() -> list[int]:
 def encontrar_repetidos(lista: list[int]) -> bool:
     """
     Contrato:
-        Esta función compara la cantidad de elementos que tiene una lista, con la cantidad de elementos que quedan al convertir la lista en un conjunto.
+        Esta función compara la cantidad de elementos que tiene una lista, con la cantidad de
+
+        elementos que quedan al convertir la lista en un conjunto.
     Precondiciones:
         Recibe como parámetro una lista de enteros.
     Postcondiciones:
-        Devuelve True cuando la cantidad de elementos en la lista es diferente a la cantidad de elementos en el conjunto.
+        Devuelve True cuando la cantidad de elementos en la lista es diferente a la cantidad de
+        elementos en el conjunto.
     """
     return len(lista) != len(set(lista))
 
@@ -37,7 +40,8 @@ def encontrar_repetidos(lista: list[int]) -> bool:
 def devolver_unicos(lista: list[int]) -> list[int]:
     """
     Contrato:
-        Filtra los elementos que aparecen una sola vez, comparando el resultado de contar cuantas veces aparece cada elemento de la lista con 1.
+        Filtra los elementos que aparecen una sola vez, comparando el resultado de contar cuantas
+        veces aparece cada elemento de la lista con 1.
     Precondiciones:
         Recibe una lista de enteros.
     Postcondiciones:
@@ -49,7 +53,9 @@ def devolver_unicos(lista: list[int]) -> list[int]:
 def main() -> None:
     """
     Contrato:
-        Ejecuta el programa principal. Crea una lista, llama a funciones para determinar si tiene elementos repetidos y generar una nueva lista sin esos elementos en caso de tenerlos. Muestra todo en pantalla.
+        Ejecuta el programa principal. Crea una lista, llama a funciones para determinar
+        si tiene elementos repetidos y generar una nueva lista sin esos elementos en caso de 
+        tenerlos. Muestra todo en pantalla.
     """
     lista = crear_lista()
     print(f"\nLa lista con la que vamos a trabajar es:\n{lista}\n")

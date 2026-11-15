@@ -4,16 +4,17 @@
 # Profe considero que es un código poco optimizado, y poco algorítmico, pero por el momento es lo que se me ocurrió sin recurrir a la IA.
 
 
-def calcular_vuelto(compra: int, pago: int) -> list:
-    """
+"""def calcular_vuelto(compra: int, pago: int) -> list:"""
+"""
     Contrato:
-      Calcula qué cantidad de cada billete se debe dar como vuelto en un comercio, calculando módulos y división entera para cada billete.
+        Calcula qué cantidad de cada billete se debe dar como vuelto en un comercio, calculando módulos y división entera para cada billete.
     Precondiciones:
         compra y pago deben ser enteros positivos.
     Postcondiciones:
         devuelve una lista de tuplas, donde cada tupla corresponde al tipo de billete y a la cantidad del mismo a devolver.
 
     """
+"""
     vuelto = pago - compra
     cant_5_000 = vuelto // 5_000
     resto = vuelto % 5_000
@@ -43,6 +44,26 @@ def calcular_vuelto(compra: int, pago: int) -> list:
         (10, cant_10),
     ]
     return lista_vuelto
+"""
+# Ya mejoramos este ejercicio profe. Ahora si
+
+def calcular_vuelto(compra: int, pago: int) -> list:
+    """
+    Contrato:
+        Calcula qué cantidad de cada billete se debe dar como vuelto en un comercio, calculando módulos y división entera para cada billete.
+    Precondiciones:
+        compra y pago deben ser enteros positivos.
+    Postcondiciones:
+        devuelve una lista de tuplas, donde cada tupla corresponde al tipo de billete y a la cantidad del mismo a devolver.
+
+    """
+    vuelto = pago - compra
+    billetes = [5_000, 1_000, 500, 200, 100, 50, 10]
+    cantidades = []
+    for i in billetes:
+        cantidades.append(vuelto // i)
+        vuelto = vuelto % i
+    return tuple(zip(cantidades, billetes))
 
 
 def main() -> None:
@@ -64,7 +85,7 @@ def main() -> None:
     else:
         lista_billetes = calcular_vuelto(compra, pago)
         print("El vuelto es de: ")
-        for billete, cantidad in lista_billetes:
+        for cantidad, billete in lista_billetes:
             if cantidad != 0:
                 print(f"{cantidad} billetes de {billete}$, ")
 
