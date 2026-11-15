@@ -10,6 +10,10 @@ Este directorio contiene los ejercicios correspondientes a este trabajo práctic
 | Nº | Archivo | Ejecución |
 |---:|---|---|
 | 1 | `tp03_ej01_operaciones_matriz.py` | `python tp03_ej01_operaciones_matriz.py` |
+| 2 | `tp03_ej02_patrones_matrices.py` | `python tp03_ej02_patrones_matrices.py` |
+| 3 | `tp03_ej03_matriz_sin_repetidos.py` | `python tp03_ej03_matriz_sin_repetidos.py` |
+| 4 | `tp03_ej04_fabrica_bicicletas.py` | `python tp03_ej04_fabrica_bicicletas.py` |
+| 5 | `tp03_ej05_cine.py` | `python tp03_ej05_cine.py` |
 
 ## Ejecutar un ejercicio
 
