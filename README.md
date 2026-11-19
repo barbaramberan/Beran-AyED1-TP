@@ -20,11 +20,11 @@ Repositorio con la resolución de los trabajos prácticos de la materia **Progra
 
 ## Datos del alumno
 
-- **Apellido y nombre:** 
-- **Legajo:** 
+- **Apellido y nombre:** BERÁN BÁRBARA MARÍA
+- **Legajo:** 1239772
 - **Curso / Comisión:** 
-- **Docente:** 
-- **Año:** 
+- **Docente:** FRANCISCO MARIANO DANIEL
+- **Año:** 2026
 
 ## Objetivo del repositorio
 
